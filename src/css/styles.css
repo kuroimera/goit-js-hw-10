@@ -8,11 +8,162 @@
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
-@import url('./animations.css');
 
 /* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
+
 @import url('./back-link.css');
-@import url('./footer.css');
+
+.choosing-container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 36px;
+  margin-bottom: 32px;
+}
+
+.choose-date {
+  font-family: 'Montserrat';
+
+  border-radius: 4px;
+  border: 1px solid #808080;
+  padding: 0 16px;
+  width: 272px;
+  height: 40px;
+  box-sizing: border-box;
+  transition: border 0.2s;
+
+  margin-right: 8px;
+}
+
+.choose-date:hover {
+  border: 1px solid #000000;
+}
+
+.choose-date:focus {
+  border: 1px solid #4e75ff;
+  outline: none;
+}
+
+.start-button:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+}
+
+.start-button {
+  padding: 8px 16px;
+  font-family: 'Montserrat';
+  height: 40px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #4e75ff;
+  border: none;
+  color: white;
+}
+
+.start-button:disabled:hover {
+  background-color: #cfcfcf;
+}
+
+.start-button:hover {
+  background-color: #6c8cff;
+}
+
+.timer {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: center;
+}
+
+.snackbar-title {
+  margin-top: 64px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  align-items: center;
+}
+
+.value {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.04em;
+}
+
+.label {
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.delay-label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.delay-input {
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  width: 360px;
+}
+
+fieldset {
+  width: 360px;
+  height: 78px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+}
+
+legend {
+  margin-left: 28px;
+  padding: 0px 4px;
+}
+
+.radio-buttons-container {
+  padding-top: 14px;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+}
+
+.delay-radio-full,
+.delay-radio-rej {
+  width: 20px;
+  height: 20px;
+}
+
+.radio-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.submit-button {
+  background-color: #4e75ff;
+  color: white;
+  height: 40px;
+  width: 360px;
+  border-radius: 8px;
+}
+
+.submit-button:hover {
+  background-color: #6c8cff;
+}

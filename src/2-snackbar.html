@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snackbar</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1 class="snackbar-title">Snackbar</h1>
+        <form class="form">
+          <label class="delay-label">
+            Delay (ms)
+            <input class="delay-input" type="number" required />
+          </label>
+
+          <fieldset>
+            <legend>State</legend>
+            <div class="radio-buttons-container">
+              <label class="radio-item">
+                <input
+                  class="delay-radio-full"
+                  type="radio"
+                  name="state"
+                  value="fulfilled"
+                  required
+                />
+                Fulfilled
+              </label>
+              <label class="radio-item">
+                <input
+                  class="delay-radio-rej"
+                  type="radio"
+                  name="state"
+                  value="rejected"
+                  required
+                />
+                Rejected
+              </label>
+            </div>
+          </fieldset>
+
+          <button class="submit-button" type="submit">
+            Create notification
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <script type="module" src="./js/2-snackbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"></script>
+  </body>
+</html>
